@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+
+.center-width {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.text-right {
+	text-align: right;
+}
+@media (max-width: 1170px) {
+	.center-width {
+		margin: 0 15px;
+	}
+}

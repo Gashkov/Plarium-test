@@ -1,0 +1,19 @@
+.presentation {
+	background-color: #484848;
+	background-img: url(../img/product_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	padding: 97px 0 105px 0;
+	text-align: center;
+}
+.presentation__title {
+	font-weight: 900;
+	font-size: 56px;
+}
+.presentation__description {
+	font-size: 20px;
+	margin: 13px 0;
+}

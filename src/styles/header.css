@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header__logo {
+	color: #313131;
+	display: inline-block;
+	padding: 19px 0;
+	font-size: 26px;
+	font-weight: 900
+}
+.header__nav {
+	display: inline-block;
+	margin-left: auto;
+}
+.header__nav-list {
+	list-style-type: none;
+	padding-top: 7px;
+}
+.header__nav-item {
+	display: inline-block;
+	padding: 19px;
+}
+.header__nav-link {
+	font-size: 14px;
+	color: #313131;
+}
+.header__nav-link:hover {
+	color: #fff;
+	transition: 500ms;
+}
+.header__nav-link_active {
+	font-weight: bold;
+}
+.header__tel {
+	display: inline-block;
+	margin: auto 0;
+	margin-left: 55px;
+	font-weight: 900;
+	font-size: 16px;
+	color: #313131;
+}

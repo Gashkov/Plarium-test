@@ -1,0 +1,92 @@
+.microblog-wrap {
+	background-color: #eeeeee;
+	padding: 70px 0 90px 0;
+}
+.microblog {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.microblog__post {
+	background: #fff;
+}
+.microblog__news, .microblog__release, .microblog__jobs {
+	max-width: 370px;
+	width: 100%;
+} 
+.microblog__name {
+	font-size: 18px;
+	font-weight: 900;
+}
+.microblog__name-separetor {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 0 8px 0 38px;
+}
+.microblog__post-more {
+	cursor: pointer;
+	color: #626262;
+	font-size: 12px;
+	font-weight: 700;
+	vertical-align: middle;
+}
+.microblog__separator {
+	background-color: #fff;	
+	width: 70px;
+	height: 5px;
+	margin-bottom: 25px;
+}
+.microblog__poster {
+	background-color: #5c5c5c;
+	height: 180px;
+	position: relative;
+}
+.microblog__date {
+	background-color: rgba(140, 140, 140, 0.9);
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 5px 18px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.microblog__title {
+	color: #3498db;
+	font-size: 18px;
+	font-weight: 900;
+}
+.microblog__content {
+	padding: 20px;
+}
+.microblog__description {
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(49, 49, 49);
+  line-height: 1.571;
+}
+.microblog__more-btn {
+	cursor: pointer;
+}
+@media (max-width: 1170px) {
+	.microblog__news, .microblog__release, .microblog__jobs {
+		padding: 0 10px;
+	} 
+}
+@media (max-width: 900px) {
+	.microblog {
+		flex-direction: column;
+	}
+	.microblog__news, .microblog__release, .microblog__jobs {
+		max-width: 90%;
+		margin: 0 auto;
+		margin-bottom: 40px;	
+	} 
+	.microblog-wrap {
+		background-color: #eeeeee;
+		padding: 40px 0 20px 0;
+	}
+}
+

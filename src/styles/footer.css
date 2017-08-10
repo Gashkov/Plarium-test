@@ -1,0 +1,87 @@
+.footer-wrap {
+	background-color: #c9c9c9;
+	padding: 50px 0 115px 0;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__item:nth-child(2) {
+	margin: 0 28% 0 0;
+}
+.footer__logo {
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+}
+.footer__address-list {
+	margin: 25px 0;
+}
+.footer__address-item, .footer__address-email, .footer__info, .footer__nav-link {
+	color: #626262;
+	font-weight: 700;
+	font-size: 14px;
+}
+.footer__address-item {
+	margin-bottom: 2px;
+}
+.footer__address-email:hover {
+	text-decoration: underline;
+}
+.footer__nav {
+
+}
+.footer__nav-list {
+
+}
+.footer__nav-item {
+	margin-bottom: 10px;
+}
+.footer__socmedia {
+
+}
+.footer__subscribe {
+
+}
+.footer__field {
+	width: 270px;
+	border: none;
+	padding: 10px 0;
+	margin-right: 10px;
+}
+.footer__submit {
+	background-color: #626262;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 900;
+	padding: 9px 7px;
+}
+.footer__title {
+	color: #000;
+	font-weight: 700;
+	font-size: 14px;
+	margin: 0 0 13px 0;
+}
+.footer__follow {
+	margin-top: 33px;
+}
+.footer__follow-list {
+
+}
+.footer__follow-item {
+	display: inline-block;
+	margin-right: 5px;
+}
+.footer__follow-link {
+	background-color: #fff;
+	color: #313131;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.footer__follow-link > i {
+	vertical-align: -webkit-baseline-middle;
+}
