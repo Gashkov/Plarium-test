@@ -22,6 +22,14 @@
 	font-weight: 700;
 	font-size: 14px;
 }
+.footer__nav-item:hover {
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+.footer__nav-item:hover {
+	transform: translateY(-3px);
+}
 .footer__address-item {
 	margin-bottom: 2px;
 }
@@ -54,9 +62,15 @@
 	border: none;
 	border-radius: 0;
 	color: #fff;
+	cursor: pointer;
+	outline: none;
 	font-size: 12px;
 	font-weight: 900;
 	padding: 9px 7px;
+}
+.footer__submit:hover{
+	transform: scale(1.1,1.1);
+	transition: all 0.3s ease;
 }
 .footer__title {
 	color: #000;

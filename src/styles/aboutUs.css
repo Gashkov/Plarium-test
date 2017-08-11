@@ -40,12 +40,13 @@
 	font-weight: 700;
 	padding: 16.5px 87px;
 }
+
 .about-info__btn:active {
-	background: lightgrey;
-	transition: 200ms;
+	background-color: lightgrey;
 }
 .about-info__btn:hover {
-
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: .3s;
 }
 .about-info__btn:focus {
 
