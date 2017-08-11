@@ -52,22 +52,22 @@ class Footer extends Component {
                   <h5 className="footer__title">FOLLOW US</h5>
                   <ul className="footer__follow-list">
                     <li className="footer__follow-item">
-                      <a className="footer__follow-link" href="#">
+                      <a className="footer__follow-link footer__follow-link_fb" href="https://www.facebook.com/" target="_blank">
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                       </a>
                     </li>
                     <li className="footer__follow-item">
-                      <a className="footer__follow-link" href="#">
+                      <a className="footer__follow-link footer__follow-link_tw" href="https://twitter.com/" target="_blank">
                         <i className="fa fa-twitter" aria-hidden="true"></i>
                       </a>
                     </li>
                     <li className="footer__follow-item">
-                      <a className="footer__follow-link" href="#">
-                        <i className="fa fa-google" aria-hidden="true"></i>
+                      <a className="footer__follow-link footer__follow-link_google" href="https://plus.google.com/" target="_blank">
+                        <i className="fa fa-google-plus" aria-hidden="true"></i>
                       </a>
                     </li>
                     <li className="footer__follow-item">
-                      <a className="footer__follow-link" href="#">
+                      <a className="footer__follow-link footer__follow-link_rss" href="https://www.rss.com/" target="_blank">
                         <i className="fa fa-rss" aria-hidden="true"></i>
                       </a>
                     </li>
