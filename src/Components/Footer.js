@@ -3,7 +3,9 @@ import '../styles/footer.css'
 
 
 class Footer extends Component {
+
   render() {
+
     return (
     		<footer className="footer-wrap">
           <div className="footer center-width">
@@ -15,7 +17,7 @@ class Footer extends Component {
                   <li className="footer__address-item">Mountain View</li>
                   <li className="footer__address-item">CA 94043</li>
                   <li className="footer__address-item">00-000-0000</li>
-                  <li className="footer__address-item"><a className="footer__address-email" href="mailto:sunrise@sunrise.io" terget="_blank">sunrise@sunrise.io</a></li>                  
+                  <li className="footer__address-item"><a className="footer__address-email" href="mailto:sunrise@sunrise.io" target="_blank">sunrise@sunrise.io</a></li>                  
                 </ul>
                 <span className="footer__info">copyright©2014 SUNRISE Inc.</span>
               </div>  

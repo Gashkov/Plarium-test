@@ -1,8 +1,48 @@
 import React, { Component } from 'react';
 import '../styles/header.css'
 
+
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isOpened: false };
+  }
+
+  toggleState() {
+    this.setState({ isOpened: !this.state.isOpened });
+  }	
   render() {
+		let mobileMenu;
+    let hamburgerBtn = (
+      <div className="header__mobile-btn">
+        <span className="header__btn-item"></span>
+        <span className="header__btn-item"></span>
+        <span className="header__btn-item"></span>
+      </div>
+      );
+      if (this.state.isOpened) {
+      	hamburgerBtn = (
+      			<nav className="header__nav_mobile">
+							<ul className="header__nav-list_mobile">
+								<li className="header__nav-item_mobile">
+									<a href="" className="header__nav-link_mobile header__nav-link_active">PRODUCTS</a>
+								</li>
+								<li className="header__nav-item_mobile">
+									<a href="" className="header__nav-link_mobile">SERVICES</a>
+								</li>
+								<li className="header__nav-item_mobile">
+									<a href="" className="header__nav-link_mobile">ABOUT</a>
+								</li>
+								<li className="header__nav-item_mobile">
+									<a href="" className="header__nav-link_mobile">JOBS</a>
+								</li>
+								<li className="header__nav-item_mobile">
+									<a href="" className="header__nav-link header__nav-link_mobile">CONTACT</a>
+								</li>
+							</ul>
+	    			</nav>
+      		)
+      }  	
     return (
     		<header className="header center-width">
     			<a href="#" className="header__logo">SOFTGRAY</a>
@@ -25,6 +65,8 @@ class Header extends Component {
 							</li>
 						</ul>
     			</nav>
+    			<div className="header__mobile-wrap" onClick={this.toggleState.bind(this)}>{hamburgerBtn}</div>
+
     			<a href="tel:+81-00-0000-0000" className="header__tel">+81-00-0000-0000</a>
     		</header>
     	)

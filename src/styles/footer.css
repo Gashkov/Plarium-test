@@ -130,4 +130,8 @@
 	.footer__item:nth-child(2) {
 		display: none;
 	}
+	.footer__field {
+		width: 195px;
+		margin-right: 0;
+	}
 }
