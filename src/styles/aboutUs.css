@@ -1,6 +1,6 @@
 .about-wrap {
 	background-color: #e5e5e5;
-	padding: 92px 0 89px 0;
+	padding: 69px 0 89px 0;
 }
 .about {
 	
@@ -13,18 +13,20 @@
 }
 .about-info__subtitle {
 	font-size: 14px;
+	font-weight: 400;
 	color: #313131;
 }
 .about-info__title {
 	color: #000;
 	font-size: 42px;
 	font-weight: 900;
+	margin-bottom: 24px
 }
 .about-info__description {
   font-size: 18px;
   color: #313131;
   line-height: 1.556;
-  padding-right: 12%;	
+  padding-right: 19%;	
   text-align: justify;
 }
 .about-info__btn {
@@ -35,7 +37,7 @@
 	color: #000;
 	display: inline-block;
 	outline: none;
-	margin-top: 40px;
+	margin-top: 13px;
 	font-size: 16px;
 	font-weight: 700;
 	padding: 16.5px 87px;
@@ -59,7 +61,7 @@
 .about-jobs__item {
 	background-color: #fff;
 	flex: 1;
-	height: 300px;
+	height: 257px;
 	padding: 20px 0 0 0;
 }
 .about-jobs__subtitle {
@@ -67,12 +69,12 @@
   font-size: 12px;
   font-weight: 900;
   text-align: center;
-  margin: 15px 0 10px 0;
+  margin: 13px 0 5px 0;
 }
 .about-jobs__title {
 	font-weight: 900;
 	font-size: 32px;
-	margin: 10px 0;
+	margin: 6px 0;
 	text-align: center;
 }
 .about-jobs__subtitle_white, .about-jobs__title_white {

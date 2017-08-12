@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/product.css'
+import PresentationBackground from '../img/product_bg.jpg';
+
 
 class Presentation extends Component {
   render() {

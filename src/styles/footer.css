@@ -1,13 +1,13 @@
 .footer-wrap {
 	background-color: #c9c9c9;
-	padding: 50px 0 115px 0;
+	padding: 57px 0 115px 0;
 }
 .footer {
 	display: flex;
 	justify-content: space-between;
 }
 .footer__item:nth-child(2) {
-	margin: 0 28% 0 0;
+	margin: 0 26.6% 0 0;
 }
 .footer__logo {
 	color: #000;
@@ -15,7 +15,7 @@
 	font-weight: 700;
 }
 .footer__address-list {
-	margin: 25px 0;
+	margin: 25px 0 14px 0;
 }
 .footer__address-item, .footer__address-email, .footer__info, .footer__nav-link {
 	color: #626262;
@@ -54,7 +54,7 @@
 .footer__field {
 	width: 270px;
 	border: none;
-	padding: 10px 0;
+	padding: 11px 0;
 	margin-right: 10px;
 }
 .footer__submit {

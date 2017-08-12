@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/services.css'
-
+import '../styles/services.css';
 
 class Services extends Component {
   render() {
@@ -9,7 +8,7 @@ class Services extends Component {
           <div className="services center-width">
             <div className="services__item">
               <div className="services__circle">
-                <img className="services__icon" src="" />
+                <img className="services__icon" alt="#" />
               </div>
               <h4 className="services__title">Consulting</h4>
               <p className="services__description">
