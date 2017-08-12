@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
-import Product from './Product';
+import Presentation from './Presentation';
 import Services from './Services';
 import AboutUs from './AboutUs';
 import Microblog from './Microblog';
@@ -12,7 +12,7 @@ class App extends Component {
     return (
     		<div>
     			<Header />
-    			<Product />
+    			<Presentation />
     			<Services />
     			<AboutUs />
     			<Microblog />

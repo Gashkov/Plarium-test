@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/product.css'
+import '../styles/presentation.css'
 import PresentationBackground from '../img/product_bg.jpg';
 
 

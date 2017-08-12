@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/aboutUs.css'
-
+import '../styles/aboutUs.css';
+import laptopImg from '../img/about_laptop.png'
 
 class AboutUs extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class AboutUs extends Component {
   }
 
   render() {
+    console.log(laptopImg);
     let dropdownText;
     let buttonText = <span>VIEW MORE</span>;
     if (this.state.isOpened) {
@@ -33,7 +34,7 @@ class AboutUs extends Component {
                 <button onClick={this.toggleState.bind(this)} className="about-info__btn">{buttonText}</button>
               </div>
               <div className="about-info__item text-right">
-                <img src="../img/about_laptop.png" alt="" />
+                <img src="{laptopImg}" alt="laptop" />
               </div>
             </div>
             <div className="about-jobs">

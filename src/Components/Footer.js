@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
 import '../styles/footer.css'
-
+import { FormErrors } from '../Components/FormErrors';
 
 class Footer extends Component {
 
+  constructor (props) {
+    super(props);
+    this.state = {
+      email: '',
+      formErrors: {email: ''},
+      emailValid: false,
+      formValid: false
+    }
+  }
+
+  handleUserInput = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    this.setState({[name]: value},
+                  () => { this.validateField(name, value) });
+  }
+  validateField(fieldName, value) {
+  let fieldValidationErrors = this.state.formErrors;
+  let emailValid = this.state.emailValid;
+switch(fieldName) {
+    case 'email':
+      emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+      fieldValidationErrors.email = emailValid ? '' : ' is invalid';
+      break;
+    default:
+      break;
+  }
+  this.setState({formErrors: fieldValidationErrors,
+                  emailValid: emailValid
+                }, this.validateForm);
+}
+validateForm() {
+  this.setState({formValid: this.state.emailValid});
+}
   render() {
 
     return (
@@ -47,8 +81,15 @@ class Footer extends Component {
               <div className="footer__socmedia">
                 <div className="footer__subscribe">
                   <h5 className="footer__title">NEWSLETTER</h5>
-                  <input type="text" className="footer__field" />
-                  <input type="submit" value="SUBSCRIBES" className="footer__submit" />
+                  <FormErrors formErrors={this.state.formErrors} />
+                  <input 
+                    type="text"
+                    name="email"
+                    onChange={this.handleUserInput} 
+                    value={this.state.email} 
+                    className="footer__field" 
+                  />
+                  <input type="submit" value="SUBSCRIBES" disabled={!this.state.formValid} className="footer__submit" />
                 </div>
                 <div className="footer__follow">
                   <h5 className="footer__title">FOLLOW US</h5>
