@@ -41,7 +41,7 @@ validateForm() {
   render() {
 
     return (
-    		<footer className="footer-wrap">
+    		<footer idName="contact" className="footer-wrap">
           <div className="footer center-width">
             <div className="footer__item">
               <div className="footer__address">

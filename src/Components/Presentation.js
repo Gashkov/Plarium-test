@@ -7,7 +7,7 @@ class Presentation extends Component {
   render() {
     return (
     		<div className="presentation">
-    			<h1 className="presentation__title">Creative Solutions</h1>
+    			<h1 idName="presentation" className="presentation__title">Creative Solutions</h1>
     			<p className="presentation__description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     			</p>

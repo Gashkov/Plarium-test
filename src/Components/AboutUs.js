@@ -21,7 +21,7 @@ class AboutUs extends Component {
       buttonText = <span>Less</span>;
     }
     return (
-    		<div className="about-wrap">
+    		<div idName="about" className="about-wrap">
           <div className="about center-width">
             <div className="about-info">
               <div className="about-info__item">
@@ -33,8 +33,8 @@ class AboutUs extends Component {
                 </p> 
                 <button onClick={this.toggleState.bind(this)} className="about-info__btn">{buttonText}</button>
               </div>
-              <div className="about-info__item text-right">
-                <img src="{laptopImg}" alt="laptop" />
+              <div className="about-info__item">
+                <img src={laptopImg} className="about-info__banner" alt="laptop" />
               </div>
             </div>
             <div className="about-jobs">

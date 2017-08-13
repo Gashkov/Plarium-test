@@ -11,6 +11,9 @@
 .about-info__item {
 	flex: 1;
 }
+.about-info__item:nth-child(2) {
+	text-align: right;
+}
 .about-info__subtitle {
 	font-size: 14px;
 	font-weight: 400;
@@ -50,8 +53,8 @@
 	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: .3s;
 }
-.about-info__btn:focus {
-
+.about-info__banner {
+	margin-top: 18px;
 }
 
 .about-jobs {
@@ -93,6 +96,9 @@
 		width: 100%;
 		flex: inherit;
 	}
+	.about-info__item:nth-child(2) {
+		text-align: center;
+	}
 }
 @media (max-width: 767px) {
 	.about-jobs {
@@ -102,6 +108,10 @@
 	.about-jobs__item {
 		width: 50%;
 		flex: inherit;
+	}
+	.about-info__banner {
+		display: inline-block;
+		width: 90%;
 	}
 }
 @media (max-width: 600px) {

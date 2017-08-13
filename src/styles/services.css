@@ -21,6 +21,11 @@
   width: 111px;
   height: 111px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.services__icon {
+	width: 40%;
 }
 .services__title {
 	color: #3498db;
