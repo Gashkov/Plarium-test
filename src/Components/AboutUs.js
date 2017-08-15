@@ -21,7 +21,7 @@ class AboutUs extends Component {
       buttonText = <span>Less</span>;
     }
     return (
-    		<div idName="about" className="about-wrap">
+    		<div id={'about'} className="about-wrap">
           <div className="about center-width">
             <div className="about-info">
               <div className="about-info__item">

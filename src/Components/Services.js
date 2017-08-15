@@ -8,7 +8,7 @@ import analysIcon from '../img/services_analys_icon.svg';
 class Services extends Component {
   render() {
     return (
-    		<div idName="services" className="services-wrap">
+    		<div id={'services'} className="services-wrap">
           <div className="services center-width">
             <div className="services__item">
               <div className="services__circle">

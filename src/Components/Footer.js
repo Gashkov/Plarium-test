@@ -1,47 +1,26 @@
 import React, { Component } from 'react';
 import '../styles/footer.css'
-import { FormErrors } from '../Components/FormErrors';
 
 class Footer extends Component {
-
-  constructor (props) {
+  constructor(props) {
     super(props);
-    this.state = {
-      email: '',
-      formErrors: {email: ''},
-      emailValid: false,
-      formValid: false
-    }
+    this.state = { value: '' };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleUserInput = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    this.setState({[name]: value},
-                  () => { this.validateField(name, value) });
+  handleChange(event) {
+    this.setState({value: event.target.value});
   }
-  validateField(fieldName, value) {
-  let fieldValidationErrors = this.state.formErrors;
-  let emailValid = this.state.emailValid;
-switch(fieldName) {
-    case 'email':
-      emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-      fieldValidationErrors.email = emailValid ? '' : ' is invalid';
-      break;
-    default:
-      break;
+
+  handleSubmit(event) {
+    alert(' Thank you! Your address ' + this.state.value + ' was successful subscribed')
   }
-  this.setState({formErrors: fieldValidationErrors,
-                  emailValid: emailValid
-                }, this.validateForm);
-}
-validateForm() {
-  this.setState({formValid: this.state.emailValid});
-}
   render() {
 
     return (
-    		<footer idName="contact" className="footer-wrap">
+    		<footer id={'contact'} className="footer-wrap">
           <div className="footer center-width">
             <div className="footer__item">
               <div className="footer__address">
@@ -81,15 +60,17 @@ validateForm() {
               <div className="footer__socmedia">
                 <div className="footer__subscribe">
                   <h5 className="footer__title">NEWSLETTER</h5>
-                  <FormErrors formErrors={this.state.formErrors} />
-                  <input 
-                    type="text"
-                    name="email"
-                    onChange={this.handleUserInput} 
-                    value={this.state.email} 
-                    className="footer__field" 
-                  />
-                  <input type="submit" value="SUBSCRIBES" disabled={!this.state.formValid} className="footer__submit" />
+                  <form onSubmit={this.handleSubmit}>
+                    <input 
+                      type="text"
+                      value={this.state.value}
+                      onChange={this.handleChange}
+                      required="required"
+                      name="email"
+                      className="footer__field" 
+                    />
+                    <input type="submit" value="SUBSCRIBES" className="footer__submit" />
+                  </form>
                 </div>
                 <div className="footer__follow">
                   <h5 className="footer__title">FOLLOW US</h5>

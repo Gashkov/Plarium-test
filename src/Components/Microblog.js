@@ -14,7 +14,7 @@ class Microblog extends Component {
   render() {
     let longText = <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.</span>
     return (
-    		<div idName="jobs" className="microblog-wrap">
+    		<div id={'jobs'} className="microblog-wrap">
     			<div className="microblog center-width">
     				<div className="microblog__news">
     					<h3 className="microblog__name">
