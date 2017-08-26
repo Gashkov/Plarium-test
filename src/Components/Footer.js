@@ -62,7 +62,7 @@ class Footer extends Component {
                   <h5 className="footer__title">NEWSLETTER</h5>
                   <form onSubmit={this.handleSubmit}>
                     <input 
-                      type="text"
+                      type="email"
                       value={this.state.value}
                       onChange={this.handleChange}
                       required="required"

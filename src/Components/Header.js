@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
-// import ScrollableAnchor from 'react-scrollable-anchor';
+
 import '../styles/header.css'
-// var Scroll  = require('react-scroll');
-
-// var Link       = Scroll.Link;
-// var Element    = Scroll.Element;
-// var Events     = Scroll.Events;
-// var scroll     = Scroll.animateScroll;
-// var scrollSpy  = Scroll.scrollSpy;
-
-// var durationFn = function(deltaTop) {
-//     return deltaTop;
-// };
 
 class Header extends Component {
   constructor(props) {
@@ -23,7 +12,6 @@ class Header extends Component {
     this.setState({ isOpened: !this.state.isOpened });
   }	
   render() {
-		// let mobileMenu;
     let hamburgerBtn = (
       <div className="header__mobile-btn">
         <span className="header__btn-item"></span>
