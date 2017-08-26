@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/presentation.css'
-import PresentationBackground from '../img/product_bg.jpg';
+// import PresentationBackground from '../img/product_bg.jpg';
 
 
 class Presentation extends Component {
